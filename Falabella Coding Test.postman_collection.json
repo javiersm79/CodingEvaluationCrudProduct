@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "42bde92c-bfbd-4f52-963c-da654fe44eb3",
+		"name": "Falabella Coding Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getl All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getl Product by SKU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/products/FAL-1000003",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"FAL-1000003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"FAL-1000003\",\r\n    \"name\": \"nameprod\",\r\n    \"brand\": \"brandprod\",\r\n    \"size\": \"sizedprod\",\r\n    \"price\": 2,\r\n    \"principalimage\": \"http://image.com/1234\",\r\n    \"otherimages\": [\"http://image.com/1234\", \"http://image.com/1235\", \"http://image.com/1734\"]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Products By SKU",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"name\": \"nameprod\",\r\n    \"brand\": \"brandprod\",\r\n    \"size\": \"sizedprod\",\r\n    \"price\": 2,\r\n    \"principalimage\": \"http://image.com/1234\",\r\n    \"otherimages\": [\"http://image.com/1234\", \"http://image.com/1235\", \"http://image.com/1734\"]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/products/FAL-1000005",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"FAL-1000005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Products By SKU",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"name\": \"nameprod\",\r\n    \"brand\": \"brandprod\",\r\n    \"size\": \"sizedprod\",\r\n    \"price\": 2,\r\n    \"principalimage\": \"http://image.com/1234\",\r\n    \"otherimages\": [\"http://image.com/1234\", \"http://image.com/1235\", \"http://image.com/1734\"]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/products/FAL-1000005",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"FAL-1000005"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
